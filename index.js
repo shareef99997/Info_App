@@ -1,22 +1,23 @@
-let movieNameRef = document.getElementById("movie-name");
+let ShowNameRef = document.getElementById("Show-name");
 let searchBtn = document.getElementById("search-btn");
 let result = document.getElementById("result");
 
 //function to fetch data from api
 
-let getMovie = () => {
-    let movieName = movieNameRef.value;
-    let url = `http://www.omdbapi.com/?t=${movieName}&apikey=${key}`;
+let getShow = () => {
+    let ShowName = ShowNameRef.value;
+    let url = `http://www.omdbapi.com/?t=${ShowName}&apikey=${key}`;
     //if input field is empty
 
-    if (movieName.length <= 0) {
-        result.innerHTML = `<h3 class="msg">Please enter a movie name </h3>`;
+    if (ShowName.length <= 0) {
+        result.innerHTML = `<h3 class="msg">Please enter a Show or tv-show name </h3>`;
     }
 
     //if input isn't empty
     else {
         fetch(url).then((resp) => resp.json()).then((data) => {
-            //if movie exist in database
+            
+            //if Show exist in database
             if (data.Response == "True") {
                 result.innerHTML = `
                     <div class="info">
@@ -35,6 +36,9 @@ let getMovie = () => {
                             <div class="genre">
                                 <div>${data.Genre.split(",").join("</div><div>")}</div>
                             </div>
+                            <div class="Language">
+                            <div>${data.Language}</div>
+                            </div>
                         </div>
                     </div>
                     <h3>Plot:</h3>
@@ -44,7 +48,7 @@ let getMovie = () => {
                 `;
             }
 
-            //if movie doesn't exist in database
+            //if Show doesn't exist in database
             else {
                 result.innerHTML = `<h3 class="msg">${data.Error}</h3>`;
             }
@@ -56,5 +60,5 @@ let getMovie = () => {
     }
 };
 
-searchBtn.addEventListener("click", getMovie);
-window.addEventListener("load", getMovie);
+searchBtn.addEventListener("click", getShow);
+window.addEventListener("load", getShow);

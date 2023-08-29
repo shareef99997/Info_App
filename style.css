@@ -9,7 +9,7 @@
 
 body{
     height: 100vh;
-    background: linear-gradient(#1c1917 50%, #ffb92a 50%);
+    background: linear-gradient(180deg, rgb(119, 22, 255) 0%, rgb(21, 13, 4) 100%);
 }
 
 .container{
@@ -50,9 +50,10 @@ body{
 }
 
 .search-container button{
-    background-color: #ffb92a;
+    background: linear-gradient(90deg, rgb(120, 1, 255) 0%, rgb(255, 8, 33) 100%);
     border: none;
     cursor: pointer;
+    border-radius: 7px;
 }
 
 #result{
@@ -116,6 +117,21 @@ h2{
     padding: 0.4em 1.6em;
     border-radius: 0.4em;
     font-weight: 300;
+    margin-top: 15px;
+}
+
+.Language{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Language div{
+    border: 1px solid #cd9f07;
+    font-size: 0.75em;
+    padding: 0.4em 1.6em;
+    border-radius: 0.4em;
+    font-weight: 300;
+    margin-top: 55px;
 }
 
 h3{
