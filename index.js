@@ -13,7 +13,7 @@ let getShow = () => {
         result.innerHTML = `<h3 class="msg">Please enter a Show or tv-show name </h3>`;
     }
 
-    //if input isn't empty
+    //if input isn't empty 
     else {
         fetch(url).then((resp) => resp.json()).then((data) => {
             
