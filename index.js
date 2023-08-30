@@ -6,7 +6,7 @@ let result = document.getElementById("result");
 
 let getShow = () => {
     let ShowName = ShowNameRef.value;
-    let url = `http://www.omdbapi.com/?t=${ShowName}&apikey=${key}`;
+    let url = `https://www.omdbapi.com/?t=${ShowName}&apikey=${key}`;
     //if input field is empty
 
     if (ShowName.length <= 0) {
