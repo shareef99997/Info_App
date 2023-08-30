@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="pagestyle.css">
-    <title>Showinfo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Info-App</title>
 </head>
-
 <body>
-  
-    <div class="container">
-        <div class="search-container">
-            <input type="text" id="Show-name" placeholder="Enter Show or tv-show name here🎥..." value="You Will Die at 20">
-            <button id="search-btn">Search</button>
-        </div>
-        <div id="result"></div>
-    </div>
-
-    <script src="key.js"></script>
-    <script src="index.js"></script>
-
+  <button onclick=Show_Info()>show info</button>
+  <button onclick=Weather()>show info</button>
+  <button onclick=Currency()>show info</button>
+  <button onclick=Country()>show info</button>
 </body>
-
 </html>
+
+
+
+
+
+
+<script>
+  function Show_Info() {
+  window.location.href = "Show_Info/Show.html";
+}
+
+function Weather() {
+  window.location.href = "Weather/Weather.html";
+}
+function Currency() {
+  window.location.href = "Currency/Currency.html";
+}
+function Country() {
+  window.location.href = "country_guide/Country.html";
+}
+</script>
