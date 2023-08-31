@@ -77,3 +77,28 @@ body {
   font-weight: 400;
   color: #f0c1c6;
 }
+
+@media screen and (max-width: 600px){
+  .search-wrapper{
+    font-size: 13px;
+      display: flex;
+      flex-direction: column;
+      grid-template-columns: 9fr 3fr;
+      gap: 1.25em;
+  }
+  .search-wrapper button{
+      width: 80px;
+      display: block;
+      margin: auto;
+      height: 40px;
+  }
+  .input {
+    padding: 10px;
+  }
+  .container{
+    top: 60%;
+  }
+  body{
+    height: 140vh;
+}
+}

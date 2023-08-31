@@ -8,7 +8,7 @@
 }
 
 body{
-    height: 100vh;
+    height: 120vh;
     background: linear-gradient(180deg, rgb(119, 22, 255) 0%, rgb(21, 13, 4) 100%);
 }
 
@@ -152,8 +152,12 @@ p{
 }
 
 @media screen and (max-width: 600px) {
+    body{
+        height: 140vh;
+    }
     .container{
-        font-size: 14px;
+        font-size: 13px;
+        top:65%;
     }
     .poster{
         margin: auto;
@@ -164,5 +168,24 @@ p{
     .info{
         grid-template-columns: 1fr;
     }
+    .search-container{
+        font-size: 13px;
+          display: flex;
+          flex-direction: column;
+          grid-template-columns: 9fr 3fr;
+          gap: 1.25em;
+      }
+      .container button{
+          width: 80px;
+          display: block;
+          margin: auto;
+          height: 40px;
+      }
+      .search-container input {
+        padding: 10px;
+      }
+      .container{
+        top: 70%;
+      }
 
 }
