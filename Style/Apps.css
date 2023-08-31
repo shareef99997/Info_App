@@ -1,0 +1,111 @@
+:root {
+  --blue-1: #34aaff;
+  --blue-2: #0018ef;
+}
+
+.Apps {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+}
+
+
+
+.Apps button {
+  height: 100px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: height 0.2s ease, opacity 0.2s ease, width 0.2s ease;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Apps div {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.Apps span {
+  font-size: 50px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out; /* Add a transition effect */
+}
+
+.Apps button:hover {
+  height: 150px;
+  opacity: 1;
+}
+
+.Apps button:hover span {
+  opacity: 1; /* Show the span when hovering over the button */
+}
+
+.Show{
+  background: linear-gradient(90deg, rgb(242, 202, 117) 0%, rgb(195, 110, 13) 100%)
+}
+
+.Weather{
+  background: linear-gradient(135deg, var(--blue-1), var(--blue-2));
+}
+
+.Currency{
+  background: linear-gradient(90deg, rgb(83, 0, 128) 0%, rgba(238, 130, 238, 1) 100%);
+}
+
+.Country{
+  background: linear-gradient(90deg, rgba(178, 178, 178, 1) 0%, rgba(111, 111, 111, 1) 100%);
+}
+@media screen and (min-width: 608px) {
+  .Apps {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .Apps div {
+    padding-top:  30px ;
+    margin-top: auto;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  .Apps {
+    grid-template-columns: repeat(2, 1fr);
+    
+    
+  }
+  .Apps button {
+    margin-bottom: 30px;
+    height: 200px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .Apps button:hover {
+    height: 250px;
+    width: 650px;
+    opacity: 1;
+  }
+  
+  .Apps button:hover span {
+    opacity: 1; 
+  }
+  .Apps div {
+    padding-top: 70px;
+    font-size: large;
+  }
+
+}
+@media screen and (max-width: 600px){
+  .Apps div {
+    margin-top: 40px;
+    font-size: small;
+  }
+}

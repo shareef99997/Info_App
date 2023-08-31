@@ -2,34 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="Style/header.css">
+  <link rel="stylesheet" href="Style/index.css">
+  <link rel="stylesheet" href="Style/Apps.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="logo.png"/>
   <title>Info-App</title>
 </head>
+
 <body>
-  <button onclick=Show_Info()>Show info</button>
-  <button onclick=Weather()>Weather App</button>
-  <button onclick=Currency()>Currency Converter</button>
-  <button onclick=Country()>Country Guide</button>
+  <!------------------ Header ------------------>
+  <header>
+    <img class="logo" src="logo.png" alt="Logo">
+    <div>Devoloped by <span>Shareef Ali</span></div>
+    <nav>
+        <ul>
+            <li><a href="https://github.com/shareef99997" target="_blank"><img src="github.png" alt=""></a></li>
+            <li><a href="https://www.linkedin.com/in/shareef-ali" target="_blank"><img src="linkedin.png" alt=""></a></li>
+            <li><a href="mailto:shareef.99997@gmail.com" target="_blank"><img src="gmail.png" alt=""></a></li>
+        </ul>
+    </nav>
+</header>
+<!------------------ Main ------------------>
+  <main>
+    <section class="Apps">
+      <button class="Show" onclick=Show_Info()><div>Tv-Show / Movies info</div> <span>🎥</span></button>
+      <button class="Weather" onclick=Weather()><div>Weather App</div> <span>🌦️</span></button>
+      <button class="Currency" onclick=Currency()><div>Currency Converter</div> <span>💱</span></button>
+      <button class="Country" onclick=Country()><div>Country Guide</div> <span>🌍</span></button>
+    </section>
+  </main>
+  <!------------------ Footer ------------------>
+  <footer></footer>
 </body>
+
+
 </html>
-
-
-
-
-
-
-<script>
-  function Show_Info() {
-  window.location.href = "Show_Info/Show.html";
-}
-
-function Weather() {
-  window.location.href = "Weather/Weather.html";
-}
-function Currency() {
-  window.location.href = "Currency/Currency.html";
-}
-function Country() {
-  window.location.href = "Country Guide App/Country.html";
-}
-</script>

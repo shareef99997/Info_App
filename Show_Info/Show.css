@@ -9,7 +9,7 @@
 
 body{
     height: 120vh;
-    background: linear-gradient(180deg, rgb(119, 22, 255) 0%, rgb(21, 13, 4) 100%);
+    background: linear-gradient(180deg, rgb(235, 186, 80) 0%, rgb(21, 13, 4) 100%);
 }
 
 .container{
@@ -50,7 +50,7 @@ body{
 }
 
 .search-container button{
-    background: linear-gradient(90deg, rgb(120, 1, 255) 0%, rgb(255, 8, 33) 100%);
+    background: linear-gradient(90deg, rgb(235, 186, 80) 0%, rgb(190, 116, 31) 100%);
     border: none;
     cursor: pointer;
     border-radius: 7px;

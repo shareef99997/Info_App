@@ -6,19 +6,21 @@
   border: none;
   outline: none;
 }
+
 body {
-  background-color: #6e21fd94;
+  background: rgb(85, 85, 85);
 }
 .wrapper {
   width: 90%;
   max-width: 25em;
-  background-color: #ffffff;
+  background: linear-gradient(90deg, rgb(83, 0, 128) 0%, rgba(238, 130, 238, 1) 100%);
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
   top: 50%;
   padding: 2em;
   border-radius: 0.8em;
+  border-color: rgb(106, 106, 106);
 }
 .app-details {
   display: flex;
@@ -32,10 +34,12 @@ body {
   font-size: 1.6em;
   text-transform: uppercase;
   margin-bottom: 1em;
+  color: rgb(246, 244, 232);
 }
 label {
   display: block;
   font-weight: 600;
+  color: #ffffff;
 }
 input#amount {
   font-weight: 400;
@@ -69,7 +73,7 @@ select {
   background-repeat: no-repeat;
   background-position: right 15px top 50%, center;
   background-size: 20px 20px;
-  background-color: #9873fe;
+  background-color: rgb(85, 85, 85) ;
   color: #ffffff;
 }
 select option {
@@ -79,7 +83,7 @@ select option {
 button {
   font-size: 1em;
   width: 100%;
-  background-color: #9873fe;
+  background-color: rgb(85, 85, 85) ;
   padding: 1em 0;
   margin-top: 2em;
   border-radius: 0.3em;
